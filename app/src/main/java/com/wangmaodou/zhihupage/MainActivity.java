@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         init();
         CreateStartPage();
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         new Handler().postDelayed(new Runnable() {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 destroyStartPage();
             }
-        },5000);
+        },15000);
     }
 
     private void init(){
