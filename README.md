@@ -1,7 +1,7 @@
 # Zhihupage
 Start Page for Zhihu Android APP.
 
-The key code is adding a application window through 
+The key code is adding a application window while the APP is starting through 
 
      getWindowManager().addView();
      
