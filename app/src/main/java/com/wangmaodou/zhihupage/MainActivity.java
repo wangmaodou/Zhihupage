@@ -9,6 +9,7 @@ import android.view.WindowManager;
 public class MainActivity extends AppCompatActivity {
 
     StartPageView mStartPageView;
+    private final long DELAY_TIME=5000l;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 destroyStartPage();
             }
-        },15000);
+        },DELAY_TIME);
     }
 
     private void init(){
